@@ -81,12 +81,12 @@ export type Apis = TsFetchTemplateDefineApis<{
 
 // @/service/fetch2/index.ts
 import { createTsFetch, TsFetchTemplate } from '@wymjs/type-safe-fetch'
-import { createMockTool } from '@wymjs/type-safe-fetch/tools/mock'
-import { createMethodUrlTool } from '@wymjs/type-safe-fetch/tools/method-url'
-import { createPathParamsUrlTool } from '@wymjs/type-safe-fetch/tools/path-params-url'
-import { createParamsAndBodyParserTool } from '@wymjs/type-safe-fetch/tools/params-and-body-parser'
-import { createMergeSameRequestTool } from '@wymjs/type-safe-fetch/tools/merge-same-request'
-import { TsFetchToolLog } from '@wymjs/type-safe-fetch/tools/log'
+import { createMockTool } from '@wymjs/type-safe-fetch/tool/mock'
+import { createMethodUrlTool } from '@wymjs/type-safe-fetch/tool/method-url'
+import { createPathParamsUrlTool } from '@wymjs/type-safe-fetch/tool/path-params-url'
+import { createParamsAndBodyParserTool } from '@wymjs/type-safe-fetch/tool/params-and-body-parser'
+import { createMergeSameRequestTool } from '@wymjs/type-safe-fetch/tool/merge-same-request'
+import { TsFetchToolLog } from '@wymjs/type-safe-fetch/tool/log'
 import { envConfig } from '~env-config'
 import { ApiResponse, MyListenerRequestInit, MyRequestInit } from '@/service/fetch2/type.ts'
 import { commonApiErrorResponse, commonApiResponse, passAuthRequest, checkApiPermission } from '@/service/fetch2/helper/watch.ts'
