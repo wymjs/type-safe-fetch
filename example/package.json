@@ -1,0 +1,19 @@
+{
+  "name": "null",
+  "version": "",
+  "type": "module",
+  "description": "",
+  "scripts": {
+    "vite-dev": "vite",
+    "vite-build": "tsc && vite build",
+    "vite-preview": "vite preview"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@wymjs/type-safe-fetch": "link:.."
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.1.6"
+  }
+}
