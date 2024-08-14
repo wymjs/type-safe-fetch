@@ -36,14 +36,6 @@ fetch2.watch.request(async req => {
 	return {
 		...req,
 		url: `${apiPrefix}${req.url[0] === '/' ? '' : '/'}${req.url}`,
-		headers: req.headers
-			? {
-					'Content-Type': 'application/json',
-					...req.headers,
-				}
-			: {
-					'Content-Type': 'application/json',
-				},
 	}
 })
 
