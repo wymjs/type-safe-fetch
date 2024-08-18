@@ -14,7 +14,7 @@ export function createParamsAndBodyParserTool<
 				req.url += `?${qs.stringify(req.params)}`
 			}
 
-			if (req.body != null && typeof req.body === object) {
+			if (!(req.headers as any)?.['Content-Type'] && !(req.headers as any)?.contentType && req.body != null && typeof req.body === object) {
 				if (req.headers == null) req.headers = { 'Content-Type': 'application/json' }
 				else if (req.headers instanceof Headers)
 					req.headers.set('Content-Type', 'application/json')
