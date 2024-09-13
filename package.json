@@ -1,6 +1,6 @@
 {
   "name": "@wymjs/type-safe-fetch",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "module",
   "description": "支持攔截器功能的類型安全與自動推導的 fetch",
   "main": "dist/index.js",
