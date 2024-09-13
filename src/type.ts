@@ -100,7 +100,7 @@ export type TsFetchTemplateUrlPathParams<
 	Params extends string[] = [],
 > = Path extends `${infer B}/:${infer P}/${infer R}`
 	? TsFetchTemplateUrlPathParams<R, [...Params, P]>
-	: Path extends `${infer B}/:${infer P}`
+	: Path extends `${infer B}:${infer P}`
 		? Record<[...Params, P][number], string>
 		: Params['length'] extends 0
 			? undefined
